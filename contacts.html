@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallScaleStudio - Contacts</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="icon" type="image/x-icon" href="placeholder/ArisBellatrixcard.png">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="studio.html">STUDIO</a></li>
+            <li><a href="index.html">GAME</a></li>
+            <li><a href="staff.html">STAFF</a></li>
+            <li><a href="extra.html">EXTRA</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="contactcontainer">
+            <h2>Get in touch with us!</h2>
+            <br>
+            <p>Whether you have questions, feedback, or just want to say hello, we're here to help. Our dedicated team is committed to providing excellent customer service and promptly addressing any inquiries you may have. Drop us an email, or give us a call we look forward to hearing from you!</p>
+            <div class="media">
+                <br>
+                <br>
+                <br>
+                <h2>Media</h2>
+                <div class="img">
+                    <a href="https://www.instagram.com/re_scire/"><img src="placeholder/Instagram_logo.png" alt="Instagram" width="50px" height="50px"></a>
+                    <a href="https://twitter.com/WuoaO6254"><img src="placeholder/twitter-logo.png" alt="Twitter" width="50px" height="50px"></a>
+                    <a href="https://www.youtube.com/channel/UCSSaYpBd09gx2LZ0V_vl3DA"><img src="placeholder/youtube-icon.png" alt="Youtube" width="50px" height="40px"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <h2>Contact us here</h2>
+            <form onsubmit="submitForm(); return false;" class="contact-left">
+                <input type="text" id="name" placeholder="Your Name" class="contactint" required>
+                <input type="email" id="email" placeholder="Your Email (Return Email)" class="contactint" required>
+                <textarea id="message" placeholder="Your Message" class="contactint" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var subject = "Message from SmallScaleStudio Contact Form";
+            var cc = ""; 
+
+        
+            var mailtoLink = "mailto:melanimation18@gmail.com" +
+                             "?subject=" + encodeURIComponent(subject) +
+                             "&cc=" + encodeURIComponent(cc) +
+                             "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+<footer>&copy; SmallScaleStudio. All Rights Reserved.</footer>
+</html>

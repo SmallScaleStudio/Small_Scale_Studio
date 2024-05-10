@@ -1,0 +1,188 @@
+
+
+body {
+    background-image: url('placeholder/chibibg.png');
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    background-color: #5b5b5b;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.background-container {
+    position: relative;
+    z-index: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+header {
+    font-family: verdana;
+    background-color: #5b5b5b;
+    color: white;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+.character-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.character-card {
+    background-color: white;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 30px;
+    width: calc(50% - 100px);
+    max-width: 400px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.character-card img {
+    max-width: 100%;
+    max-height: 500px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.descriptionAr {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: left;
+    display: none; 
+    z-index: 1; 
+    transition: left 0.3s; 
+}
+
+.character-card.active .descriptionAr {
+    display: block;
+}
+
+.descriptionR {
+    position: absolute;
+    top: 0;
+    right: 100%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: left;
+    display: none; 
+    z-index: 1; 
+    transition: right 0.3s; 
+}
+
+.character-card.active .descriptionR {
+    display: block;
+}
+
+
+.descriptionS {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: left;
+    display: none; 
+    z-index: 1; 
+    transition: left 0.3s; 
+}
+
+.character-card.active .descriptionS {
+    display: block;
+    
+}
+
+
+.descriptionA {
+    position: absolute;
+    top: 0;
+    right: 100%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: left;
+    display: none; 
+    z-index: 1; 
+    transition: right 0.3s; 
+}
+
+.character-card.active .descriptionA {
+    display: block;
+}
+
+.descriptionJ {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: left;
+    display: none; 
+    z-index: 1; 
+    transition: left 0.3s; 
+}
+
+.character-card.active .descriptionJ {
+    display: block;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="character1.css">
+    <link rel="icon" type="image/x-icon" href="placeholder/ArisBellatrixcard.png">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEMESTER - CHARACTERS</title>
+    <link rel="stylesheet" href="character1.css">
+
+</head>
+<body>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="placeholder/logo.png" alt="logo" width="500px" height="130px">
+        </a>
+    </div>
+
+
+    <div class="container">
+        <div class="wrapper">
+    
+
+            <header>
+                <h1>Characters</h1>
+            </header>
+    
+            <div class="character-container">
+                <div class="character-card" onclick="toggleDescription(this)">
+                    <img src="placeholder/arismain.png" alt="ARIS BELLATRIX">
+                    <div class="descriptionAr">
+                        <h2>ARIS BELLATRIX</h2>
+                        <p>Birthday: March 15</p>
+                        <p>Blood Type: O</p> 
+                        <p>Height: 155cm</p>  
+                        <p>Weight: 42kg</p>   
+                        <p>Hair: Pink</p>  
+                        <p>Eyes: Gray</p>
+                        <br>
+                        <p><b>The Rich man's daughter</b></p>
+                        <p>"Aris Bellatrix, the daughter of a CEO, admires her best friend Rene's normal life and wants to stick with her forever. Unlike her fancy upbringing, Aris prefers simplicity and values friendship most. Even though her family is rich, she doesn't care much for it and just wants a simple life. Drumming in a band is her passion, but her dad doesn't like it because he thinks it's too tomboyish, even though Aris doesn't see herself that way. Despite all this, Aris stays easygoing and funny, hiding her inner struggles behind a cheerful attitude."</p>
+                    </div>
+                </div>
+    
+                <div class="character-card" onclick="toggleDescription(this)">
+                    <img src="placeholder/rene default Beta1.png" alt="RENE AQUARII">
+                    <div class="descriptionR">
+                        <h2>RENE AQUARII</h2>
+                        <p>Birthday: November 11</p>
+                        <p>Blood Type: A</p> 
+                        <p>Height: 174cm</p>  
+                        <p>Weight: 51kg</p>   
+                        <p>Hair: Black</p>  
+                        <p>Eyes: Brown</p>
+                        <br>
+                        <p><b>The Brain</b></p>
+                        <p> "Rene is Aris's childhood best friend, known for her smarts, kindness, and laid-back vibe. Despite Aris sometimes needing her attention, Rene doesn't mind at all. She's always there for Aris, offering advice and support without hesitation. While she's wise beyond her years, Rene is also aware of her own imperfections. Still, she always does her best, especially when it comes to being there for Aris, whom she values deeply."</p>
+                    </div>
+                </div>
+    
+                <div class="character-card" onclick="toggleDescription(this)">
+                    <img src="placeholder/sedna default Beta1.png" alt="SEDNA STELLAREN">
+                    <div class="descriptionS">
+                        <h2>SEDNA STELLAREN</h2>
+                        <p>Birthday: June 15</p>
+                        <p>Blood Type: O</p> 
+                        <p>Height: 165cm</p>  
+                        <p>Weight: 52kg</p>   
+                        <p>Hair: Black</p>  
+                        <p>Eyes: Black</p>
+                        <br>
+                        <p><b>Violinist</b></p>
+                        <p>"Kind and Gentle by nature, Sedna Stellaren have a passion as a Violinist, inheriting her fathers cherished violin, while she's usually self-reliant, Sedna sometimes struggles with her own problems in silence, keeping them to herself. This reluctance originates not from a lack of trust but rather a desire to not be a burden to eveyone else."</p>
+                    </div>
+                </div>
+    
+                <div class="character-card">
+                    <img src="placeholder/alpha beta 1.png" alt="ALPHA CELESTARA">
+                    <div class="descriptionA">
+                        <h2>ALPHA AURORA</h2>
+                        <p>Birthday: October 18</p>
+                        <p>Blood Type: AB</p> 
+                        <p>Height: 168cm</p>  
+                        <p>Weight: 55kg</p>   
+                        <p>Hair: Blonde</p>  
+                        <p>Eyes: Dark Blue</p>
+                        <br>
+                        <p><b>Blonde</b></p>
+                        <p>"Alpha, once in a relationship with the MC, struggles with a tendency to be easily deceived due to her trusting nature. Despite her desire to break free from this pattern, her shy personality holds her back. She resents her own timidity, longing to assert herself more confidently."</p>
+    
+                    </div>
+                </div>
+    
+                <div class="character-card">
+                    <img src="placeholder/selena default Beta1.png" alt="JOVIA AURORA">
+                    <div class="descriptionJ">
+                        <h2>SELENA</h2>
+                        <p>Birthday: January 15</p>
+                        <p>Blood Type: O</p> 
+                        <p>Height: 168cm</p>  
+                        <p>Weight: 53kg</p>   
+                        <p>Hair: Brunett</p>  
+                        <p>Eyes: Brown</p>
+                        <br>
+                        <p><b>Four eyes</b></p>
+                        <p>"Selena, with her glasses and quiet demeanor, may seem unremarkable at first. However, her poor eyesight has made her observant and perceptive, adding depth to her character. Once a close friend of the main character, Selena's seemingly boring exterior hides a vibrant personality. Those who take the time to know her are often surprised by her subtle humor and insightful observations."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var characterCards = document.querySelectorAll('.character-card');
+
+        characterCards.forEach(function(card) {
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('active');
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('active');
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+

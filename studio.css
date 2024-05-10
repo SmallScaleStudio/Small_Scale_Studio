@@ -1,0 +1,156 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+
+header {
+    position: relative;
+    background: #000000;
+    height: 100px;
+}
+
+.cover {
+    font-family: verdana;
+    background-color: #000; 
+    color: #fff;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+.name {
+    font-size: 60px; 
+}
+
+.text {
+    font-size: 60px; 
+}
+
+.text1 {
+    font-size: 20px;
+}
+
+.spacer {
+    margin: 0 auto;
+    width: 50% ;
+    padding: 5px;
+    background-image: linear-gradient(to left, transparent, #ffffff, transparent);
+}
+
+
+.navbar {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    padding: 0px;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+footer {
+    background: #555555;
+    color: #cbcbcb;
+    font-size: 15px;
+    text-align: center;
+    font-family: verdana;
+    padding: 10px;
+    height: auto; 
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 1080px) and (max-height: 2400px) {
+    .cover {
+        padding: 20px; 
+    }
+
+    .name {
+        font-size: 120px; 
+    }
+
+    .text {
+        font-size: 60px; 
+    }
+
+    .text1 {
+        font-size: 40px; 
+    }
+
+    .spacer {
+        width: 80%; 
+    }
+
+    .slogan {
+        font-size: 40px; 
+    }
+
+    .navbar {
+        top: 120px; 
+        right: 50px; 
+    }
+
+    .navbar ul {
+        padding: 0;
+        font-size: 40px;
+    }
+
+    .navbar ul li {
+        display: inline-block; 
+        margin-right: 10px;
+    }
+
+}
+
+
+
